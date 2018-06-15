@@ -24,7 +24,7 @@ const MinWeightMagnitude = 16 // constant defined by IOTA - the difficulty of Po
 const transfers = [
     {
         // where are we sending the transaction to?
-        address: 'CHNLHJCYBZCYUI9DTHINDDWHNJWFCHQOTGABXFVZQHXF9BROTOIJZJSBXOVKCDGCXZTDDJUVTYBJZYAOH',
+        address: 'TNUO9CBKEUBXFKPCOFBHCBXQDZQRXJEBXKIMIMZHD9LUBPRGVMNARHLVQGABAFLFWXPMLUOUCQRKSFZST',
 
         // how many tokens are we transferring?
         value: 0,
