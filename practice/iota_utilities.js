@@ -4,10 +4,13 @@ var crypto = require('crypto');
 var iota = new IOTA ({});
 
 const attach = async (s_seed, r_seed, packet) => {
-    const address = await generateAddress(r_seed);
+    const d_address = await generateAddress(r_seed);
+    const s_address = await generateAddress(s_seed);
+    packet.s_address = s_address;
+
     const transfer =[
         {
-            address: address,
+            address: d_address,
             value: 0,
             tag: 0,
             message: iota.utils.toTrytes(JSON.stringify(packet))
@@ -66,5 +69,6 @@ const getTransfers = async address => {
 module.exports = {
     attach,
     find,
-    getTransfers
+    getTransfers,
+    sendTransfer
 };

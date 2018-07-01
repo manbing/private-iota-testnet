@@ -1,4 +1,4 @@
-const utils = require('./utilities.js');
+const utils = require('./iota_utilities.js');
 
 const r_seed = 'BOWYMBUDBEO9O9KHJFDXJLTMRGJYQJQ9QPJNRHHTNKNMSPBNCXO9NKSVBJYZLBJNPKZYIXXINS9NUCDRU'
 
